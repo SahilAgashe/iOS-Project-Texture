@@ -1,0 +1,6 @@
+framework module Pods_SAAProject {
+  umbrella header "Pods-SAAProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
