@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8129D8D82CF391D100417A49 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8129D8D72CF391D100417A49 /* MyCollectionController.swift */; };
 		81D98D652CC6A44000299D52 /* SimpleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D98D642CC6A44000299D52 /* SimpleController.swift */; };
 		81FE9E3C2C79ABC700CC47D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9E3B2C79ABC700CC47D0 /* AppDelegate.swift */; };
 		81FE9E3E2C79ABC700CC47D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9E3D2C79ABC700CC47D0 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5B05100AF89AE5EB82214850 /* Pods_SAAProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8129D8D72CF391D100417A49 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
 		81D98D642CC6A44000299D52 /* SimpleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleController.swift; sourceTree = "<group>"; };
 		81FE9E382C79ABC700CC47D0 /* SAAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FE9E3B2C79ABC700CC47D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8129D8D62CF3919700417A49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81FE9E3F2C79ABC700CC47D0 /* ViewController.swift */,
+				81FF503F2CC62CE600A8AA86 /* MyViewController.swift */,
+				81D98D642CC6A44000299D52 /* SimpleController.swift */,
+				8129D8D72CF391D100417A49 /* MyCollectionController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		81FE9E2F2C79ABC700CC47D0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +90,11 @@
 			children = (
 				81FE9E3B2C79ABC700CC47D0 /* AppDelegate.swift */,
 				81FE9E3D2C79ABC700CC47D0 /* SceneDelegate.swift */,
-				81FE9E3F2C79ABC700CC47D0 /* ViewController.swift */,
+				8129D8D62CF3919700417A49 /* Controllers */,
 				81FE9E412C79ABC700CC47D0 /* Main.storyboard */,
 				81FE9E442C79ABC800CC47D0 /* Assets.xcassets */,
 				81FE9E462C79ABC800CC47D0 /* LaunchScreen.storyboard */,
 				81FE9E492C79ABC800CC47D0 /* Info.plist */,
-				81FF503F2CC62CE600A8AA86 /* MyViewController.swift */,
-				81D98D642CC6A44000299D52 /* SimpleController.swift */,
 			);
 			path = SAAProject;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				81FF50402CC62CE600A8AA86 /* MyViewController.swift in Sources */,
 				81FE9E3E2C79ABC700CC47D0 /* SceneDelegate.swift in Sources */,
 				81D98D652CC6A44000299D52 /* SimpleController.swift in Sources */,
+				8129D8D82CF391D100417A49 /* MyCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
