@@ -23,15 +23,16 @@ class MyCollectionController: UIViewController {
         cn.view.contentInsetAdjustmentBehavior = .never
         cn.view.showsVerticalScrollIndicator = false
         cn.leadingScreensForBatching = 1.0
-        cn.dataSource = self
-        cn.delegate = self
+        //cn.dataSource = self
+        //cn.delegate = self
         return cn
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        addCollectionNode()
+        //addCollectionNode()
+        addImageNodeToCenter()
     }
     
     private func addCollectionNode() {
