@@ -10,6 +10,17 @@ import AsyncDisplayKit
 
 class MyCollectionController: UIViewController {
     
+    private lazy var pollingBtn: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("Start Polling", for: .normal)
+        btn.addTarget(self, action: #selector(pressMeAction(sender: )), for: .touchUpInside)
+        return btn
+    }()
+    
+    private var timer: Timer?
+    private var pollingApiCalled = 0
+    private var pollingTime: Double = 2
+    
     private lazy var myImageNode: ASImageNode = {
         let imageNode = ASImageNode()
         imageNode.image = UIImage(named: "saaImage")
@@ -30,9 +41,40 @@ class MyCollectionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemCyan
         //addCollectionNode()
-        addImageNodeToCenter()
+        //addImageNodeToCenter()
+        addMyButton()
+    }
+    
+    @objc func pressMeAction(sender: UIButton) {
+        guard timer == nil else {
+            timer?.invalidate()
+            timer = nil
+            pollingApiCalled = 0
+            sender.setTitle("Start Polling", for: .normal)
+            print("Polling stopped!")
+            return
+        }
+        timer = Timer.scheduledTimer(timeInterval: pollingTime, target: self, selector: #selector(makeApiCall), userInfo: nil, repeats: true)
+        sender.setTitle("Stop Polling", for: .normal)
+    }
+    
+    @objc func makeApiCall() {
+        pollingApiCalled = pollingApiCalled + Int(pollingTime)
+        print("Making api called", pollingApiCalled)
+        
+    }
+    
+    private func addMyButton() {
+        let stack = UIStackView(arrangedSubviews: [pollingBtn])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stack)
+        
+        NSLayoutConstraint.activate([
+            stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        ])
     }
     
     private func addCollectionNode() {
