@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8129D8D82CF391D100417A49 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8129D8D72CF391D100417A49 /* MyCollectionController.swift */; };
 		81D98D652CC6A44000299D52 /* SimpleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D98D642CC6A44000299D52 /* SimpleController.swift */; };
+		81DF9FD12D253C8200187101 /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF9FD02D253C8200187101 /* MyPageController.swift */; };
 		81FE9E3C2C79ABC700CC47D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9E3B2C79ABC700CC47D0 /* AppDelegate.swift */; };
 		81FE9E3E2C79ABC700CC47D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9E3D2C79ABC700CC47D0 /* SceneDelegate.swift */; };
 		81FE9E402C79ABC700CC47D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9E3F2C79ABC700CC47D0 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		5B05100AF89AE5EB82214850 /* Pods_SAAProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129D8D72CF391D100417A49 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
 		81D98D642CC6A44000299D52 /* SimpleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleController.swift; sourceTree = "<group>"; };
+		81DF9FD02D253C8200187101 /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
 		81FE9E382C79ABC700CC47D0 /* SAAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FE9E3B2C79ABC700CC47D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FE9E3D2C79ABC700CC47D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				81FF503F2CC62CE600A8AA86 /* MyViewController.swift */,
 				81D98D642CC6A44000299D52 /* SimpleController.swift */,
 				8129D8D72CF391D100417A49 /* MyCollectionController.swift */,
+				81DF9FD02D253C8200187101 /* MyPageController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DF9FD12D253C8200187101 /* MyPageController.swift in Sources */,
 				81FE9E402C79ABC700CC47D0 /* ViewController.swift in Sources */,
 				81FE9E3C2C79ABC700CC47D0 /* AppDelegate.swift in Sources */,
 				81FF50402CC62CE600A8AA86 /* MyViewController.swift in Sources */,
